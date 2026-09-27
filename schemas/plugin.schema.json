@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "DontDoThat Plugin",
+    "type": "object",
+    "required": ["name", "version", "hooks"],
+    "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "author": {"type": "string"},
+        "description": {"type": "string"},
+        "hooks": {"type": "array", "items": {"type": "string"}},
+        "min_core": {"type": "string"},
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "signature": {"type": "string"}
+    }
+}
