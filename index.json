@@ -2,9 +2,24 @@
     "schema": 2,
     "updated": "2026-09-28",
     "trust_model": {
-        "sandboxed": {"access": [], "description": "Only ctx, no module/kernel access"},
-        "trusted": {"access": ["module"], "description": "Full module access (DontDoThat instance)"},
-        "privileged": {"access": ["module", "kernel", "cfg"], "description": "Module + kernel + config"}
+        "sandboxed": {
+            "access": [],
+            "description": "Only ctx, no module/kernel access"
+        },
+        "trusted": {
+            "access": [
+                "module"
+            ],
+            "description": "Full module access (DontDoThat instance)"
+        },
+        "privileged": {
+            "access": [
+                "module",
+                "kernel",
+                "cfg"
+            ],
+            "description": "Module + kernel + config"
+        }
     },
     "plugins": [
         {
@@ -14,7 +29,12 @@
             "author": "@flexOwnerAL",
             "description": "Light Cloudflare/captcha/JS bypass strategies with cookie jar, site handlers, parallel warmup and strategy stats.",
             "min_core": "5.0.0",
-            "tags": ["bypass", "cloudflare", "captcha", "js"],
+            "tags": [
+                "bypass",
+                "cloudflare",
+                "captcha",
+                "js"
+            ],
             "sha256": "306e70b719338bfe321b894561ab40471a860ebf96adb8c1d3bc5ad66fab7ee6"
         },
         {
@@ -24,9 +44,33 @@
             "author": "@flexOwnerAL",
             "description": "just an extension that expandes the dontdothat functions",
             "min_core": "6.7.0",
-            "access": ["module"],
-            "tags": ["pre", "post", "byp", "js", "err", "res", "srch", "cmd", "life", "site"],
+            "access": [
+                "module"
+            ],
+            "tags": [
+                "pre",
+                "post",
+                "byp",
+                "js",
+                "err",
+                "res",
+                "srch",
+                "cmd",
+                "life",
+                "site"
+            ],
             "sha256": "f45cafac08e9f25a585864baf2a0342083ae10b7e8b2bb1a351c5fd149e6baab"
+        },
+        {
+            "name": "RCAgent",
+            "file": "plugins/RCAgent.py",
+            "version": "1.0.0",
+            "author": "@unknown",
+            "description": "",
+            "min_core": "6.7.0",
+            "sha256": "934b42cf2792da8e1fbf772b407cf9a914a1e3cec1e0b1f65551261808a4101c",
+            "access": [],
+            "tags": []
         }
     ]
 }
