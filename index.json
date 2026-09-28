@@ -71,6 +71,17 @@
             "sha256": "934b42cf2792da8e1fbf772b407cf9a914a1e3cec1e0b1f65551261808a4101c",
             "access": [],
             "tags": []
+        },
+        {
+            "name": "DontDoThat",
+            "file": "plugins/DontDoThat.py",
+            "version": "6.8.0",
+            "author": "@flexOwnerAL",
+            "description": "Public web search with roles, plugins, trust, morfology, boolean ops, readability, backup, audit.",
+            "min_core": "6.7.0",
+            "sha256": "15c6d21200417bcf8906fb04d21fc984a0bb156876f79bcadd0ec8faeca48500",
+            "access": [],
+            "tags": []
         }
     ]
 }
